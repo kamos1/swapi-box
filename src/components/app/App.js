@@ -21,16 +21,6 @@ class App extends Component {
       .then((data) => this.setState({category: input, categoryData: data}))
   }
 
-  // peopleFetch(input) {
-  //   fetch(`http://swapi.co/api/${input}`)
-  //     .then((response)=>{return response.json()})
-  //     .then((obj) => peopleCleaner(obj))
-  //     .then((people) => this.planetFetch(people.homeworld))
-  //     .then((data)=>{this.setState({category: input, categoryData: data})})
-  // }
-
-
-
   render() {
     return (
       <div className="App">

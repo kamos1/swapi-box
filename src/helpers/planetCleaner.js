@@ -5,7 +5,7 @@ const planetCleaner = (data) => {
   // console.log(array);
   const planets =  array.reduce((acc, planet) => {
     if(!acc[planet.name]) {
-      acc[planet.name] = {terrain: planet.terrain, population: planet.population, climate: planet.climate, residents: planet.residents}
+      acc[planet.name] = {name: planet.name, terrain: planet.terrain, population: planet.population, climate: planet.climate, residents: planet.residents}
     }
     return acc;
   }, {})
